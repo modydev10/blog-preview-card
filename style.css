@@ -31,11 +31,12 @@ body {
     /* gap: 20px; */
     align-items: center;
     transition: 0.3s;
+    box-shadow: 8px 8px;
     
 }
 
 #main-card:hover {
-    box-shadow: 8px 8px;
+    box-shadow: none;
 }
 
 
@@ -46,6 +47,7 @@ body {
 
 p.date {
     font-size: 12px;
+    cursor: pointer;
 }
 
 
@@ -69,10 +71,19 @@ div.title {
     font-weight: bold;
 }
 
+h3 {
+    cursor: pointer;
+}
+
+
+:is(p.date, p.text, h3):hover {
+    color: hsl(47, 88%, 63%);
+}
 
 
 p.text {
     color: hsl(0, 0%, 42%);
+    cursor: pointer;
 }
 
 
